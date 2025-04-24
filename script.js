@@ -69,7 +69,7 @@ function RemoveItem(index){
 
 function checkout(){
 
-    alert("checkout functionality comming soon");
+    alert("checkout functionality coming soon");
 
 }
 

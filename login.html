@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login | HotOrNot</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Dont have an account?<a href="Register.html"> Register here</a></p>
+            </form>
+        </div>
+
+        <script>
+            document.getElementById("login-form").addEventListener("submit", function(e){
+
+                e.preventDefault();
+                alert("Login functionality comming soon")
+            });
+        </script>
+    </body>
+</html>

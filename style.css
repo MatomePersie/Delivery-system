@@ -139,3 +139,94 @@ nav a:hover{
 
     background: #e04444;
 }
+
+.cart-section{
+
+    padding: 2rem;
+}
+
+.cart-items{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cart-item{
+
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(255, 94, 94, 0.2);
+
+}
+
+.cart-item h3{
+
+    margin: 0;
+}
+
+.cart-controls button{
+
+    margin: 0.5rem 0.5rem 0 0;
+    padding: 0.5rem 1rem;
+    background: #ff5e5e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart-controls  button:hover{
+    background: #e04444;
+}
+
+.cart-summary{
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.form-container{
+
+    max-width: 400px;
+    margin: 80px auto;
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(255, 94, 94, 0.2);
+    color: #fff;
+}
+
+.form-container h2{
+
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-container input{
+
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #2a2a2a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.form-container button{
+
+    width: 100%;
+    padding: 12px;
+    background: #ff5e5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-container p{
+    margin-top: 1rem;
+    text-align: center;
+}

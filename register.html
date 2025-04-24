@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register | HotOrNot</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Create Account</h2>
+            <form id="registerForm">
+                <input type="text" id="newUser" placeholder="NewUser" required>
+                <input type="email" id="NewEmail" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+                <p>Already have an account ?<a href="login.html">Login here</a></p>
+
+            </form>
+        </div>
+        <script>
+            document.getElementById("registerForm").addEventListener("submit", function(e){
+
+                e.preventDefault();
+                alert("Registrsation functionality comming soon");
+
+            });
+        </script>
+    </body>
+</html>
