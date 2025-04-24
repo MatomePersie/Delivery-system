@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu | HotOrNot</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <div class="logo">HotOrNot</div>
+        <nav>
+            <a href="index.html"></a>
+            <a href="menu.html"></a>
+            <a href="cart.html"></a>
+            <a href="login.html"></a>
+        </nav>
+    </header>
+    <section class="menu-page">
+        <h1>Our Menu</h1>
+        <div class="food-items">
+            <!--pizza-->
+            <div class="food-card">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>R89.00</p>
+                <button onclick="AddtoCart('Pizza', 89)">Add to Cart</button>
+            </div>
+            <!--Burger-->
+            <div class="food-card">
+                <img src="images/burger.webp" alt="Burger">
+                <h3>Burger</h3>
+                <p>R65.00</p>
+                <button onclick="AddtoCart('Burger', 65)">Add to Cart</button>
+            </div>
+            <!--Sushi-->
+            <div class="food-card">
+                <img src="images/sushi.jpg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>R100.00</p>
+                <button onclick="AddtoCart('Sushi',100)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
