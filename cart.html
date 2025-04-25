@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
+    <script>
+        const user = localStorage.getItem("username");
+        if (!user) {
+          alert("Please log in to view this page.");
+          window.location.href = "login.html";
+        }
+      </script>
     <header>
         <h1 class="logo">
             <span class="hot">Hot</span><span class="or">OR</span><span class="Not">Not</span>

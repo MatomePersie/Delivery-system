@@ -21,8 +21,34 @@
             document.getElementById("login-form").addEventListener("submit", function(e){
 
                 e.preventDefault();
-                alert("Login functionality comming soon")
+                const credentials ={
+                    username: document.getElementById("username").value,
+                    password: document.getElementById("password").value
+                };
+
+                fetch("http://localhost:8080/api/auth/login",{
+                    
+                    method: "POST",
+                    headers:{
+                        "content-Type":"application/json"
+                    },
+                    body: JSON.stringify(credentials)
+                })
+                .then(response => {
+                    if(response.ok){
+                        localStorage.setItem("username", credentials.username);
+                        alert("Log in succesful");
+                        window.location.href = "menu.html";
+                    }else{
+                        return response.text().then(err=>{throw new error(err);});
+                    }
+               
+            })
+            .catch(error=>{
+                alert("Login failed:"+ error.message);
+            
             });
+        });
         </script>
     </body>
 </html>

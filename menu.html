@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
+    <script>
+        const user = localStorage.getItem("username");
+        if (!user) {
+          alert("Please log in to view this page.");
+          window.location.href = "login.html";
+        }
+      </script>
     <header>
         <h1 class="logo">
             <span class="hot">Hot</span><span class="or">OR</span><span class="Not">Not</span>
@@ -15,6 +22,7 @@
             <a href="menu.html"></a>
             <a href="cart.html"></a>
             <a href="login.html"></a>
+            <p></p><a href="index.html">Home</a></p>
         </nav>
     </header>
     <section class="menu-page">
@@ -40,6 +48,34 @@
                 <h3>Sushi</h3>
                 <p>R100.00</p>
                 <button onclick="AddtoCart('Sushi',100)">Add to Cart</button>
+            </div>
+            <!--Chips-->
+            <div class="food-card">
+                <img src="images/chips.webp" alt="chips">
+                <h3>Chips</h3>
+                <p>R45.00</p>
+                <button onclick="AddtoCart('Chips',45)">Add to Cart</button>
+            </div>
+            <!--Samp and Stew-->
+            <div class="food-card">
+                <img src="images/samo and stew.jpg" alt="chips">
+                <h3>Samp and Stew</h3>
+                <p>R45.00</p>
+                <button onclick="AddtoCart('Samp and Stew',45)">Add to Cart</button>
+            </div>
+            <!--Mogodu-->
+            <div class="food-card">
+                <img src="images/chips.webp" alt="chips">
+                <h3>Chips</h3>
+                <p>R45.00</p>
+                <button onclick="AddtoCart('Chips',45)">Add to Cart</button>
+            </div>
+            <!--Pap and wors-->
+            <div class="food-card">
+                <img src="images/pap and wors.webp" alt="chips">
+                <h3>Pap and Wors</h3>
+                <p>R35.00</p>
+                <button onclick="AddtoCart('Pap and Wors',45)">Add to Cart</button>
             </div>
         </div>
     </section>
